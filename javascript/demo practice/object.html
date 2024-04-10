@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Objects</title>
+</head>
+<body>
+  <script>
+    let product ={
+        size: '35',
+        item: 'jeans',
+        type: 'slimfit',
+        'delivery-time' : 'same day delivery',
+    };
+
+    // let copyproduct= product;
+    // console.log(product);
+    // product.size='M';
+    // console.log(product);
+    // copyproduct.type= 'regularfit';
+    // console.log(product);
+
+    console.log(product['delivery-time']);
+
+    let obj={
+        message: 'good job',
+        status : 'complete',
+    };
+
+
+    console.log(obj);
+    let {message, status} = obj;
+    console.log(message);
+    console.log(status);
+
+    function isIDenticalproduct (product1, product2)
+    {
+        if (product1 == product2) {
+            return true;
+        } 
+
+        if (typeof product1 !== 'object' || typeof product2 !== 'object') {
+            console.warn('parameter passed was not an object');
+
+            return false;
+        }
+
+        if (product1 == product2) {
+            return true;
+        }
+
+        if (product.name === product2.name)
+    }
+    
+
+
+
+  </script>
+</body>
+</html>

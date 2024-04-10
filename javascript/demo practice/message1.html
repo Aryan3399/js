@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>message1</title>
+</head>
+<body>
+    <h3 id="greeting"></h3>
+    <script>
+        let date = new Date();
+        let hours =12;
+        let heading = document.querySelector('#greeting');
+
+        if (hours > 5 &&  hours < 12) {
+            heading.innerText = 'Good Morning';
+        } else if  (hours > 12 && hours < 18); {
+            heading.innerText = 'After noon';
+        } else {
+            heading.innerText = 'Good Night';
+        }
+
+    </script>
+    
+</body>
+</html>
